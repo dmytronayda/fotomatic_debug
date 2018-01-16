@@ -6,10 +6,29 @@ html {
 }
 
 .main-content {
-  position: relative;
-  top: 5.3125rem; /* To offset for fixed header. */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+}
+#sign-up-section {
+  padding-top: 5.3125rem;
+  display: flex;
+  background-image: url("./../images/banner-landingpage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
 }
 
+#sign-up-cta {
+  /* To offset for fixed header. -- top: 5.3125rem;  */
+  margin: 10.625rem 0 10.625rem 6.25rem;
+  padding: 2rem 5rem 3.5rem 5rem;
+
+}
 .center {
   text-align: center;
 }
