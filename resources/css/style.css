@@ -6,7 +6,7 @@ html {
 }
 
 .main-content {
-
+  padding: 5.3125rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,8 +29,33 @@ html {
   padding: 2rem 5rem 3.5rem 5rem;
 
 }
+
+#features-section .main-content{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  width: 100%;
+}
+
+#features-section {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
 .center {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.center .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .button {
@@ -38,14 +63,37 @@ html {
   background-color: #4a4a4a;
   color: white;
 }
-
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem 2.375rem 2.875rem 0;
+  padding: 2rem 2rem 11.6875rem 2rem;
+  height: 39.6875rem;
+}
 .image-container {
   overflow: hidden;
+  display: flex;
+  width: 100%;
+  margin: 0;
 }
 
+
 .image-container img {
-  display: block;
+  display: flex;
+  width: 100%;
+  height: 65%;
+  margin-bottom: 2.5rem;
 }
+
+.center .content {
+  display: flex;
+  justify-content: center;
+  height: 11.6875rem;
+
+}
+
+
 
 @media only screen and (max-width: 760px) {
   .main-content {
@@ -243,7 +291,6 @@ header .mobile {
 }
 
 .feature .image-container {
-  width: 90%;
   height: 65%;
   margin: 0 auto;
 }
