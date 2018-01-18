@@ -6,7 +6,7 @@ html {
 }
 
 .main-content {
-  padding: 5.3125rem 0;
+  padding: 5.3125rem 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -329,32 +329,76 @@ header .mobile {
 /* Filters Section */
 
 #filters-section {
-  padding: 4rem 0;
+  padding: 4rem 1%;
   background-color: #4a4a4a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
 }
 
-#filters-section .content {
-  padding: 0 .625rem;
+#filters-section .center {
+  text-align: center;
+  align-items: center;
   margin-bottom: 5rem;
 }
 
-#filters-section .content h2 {
-  font-size: 2.25rem;
+#filters-section .center h2 {
   font-weight: bold;
   color: white;
+  opacity: 100%;
+  font-size: 2.25rem;
 }
 
-#filters-section .content h3 {
+#filters-section .center h3 {
+  font-family: "Roboto";
+  font-weight: lighter;
+  color: white;
   font-size: 1rem;
   line-height: 1.4;
-  font-weight: 300;
-  color: white;
 }
 
-#filters-section .images-container {
-  max-width: 100%;
-  padding: 0 1%;
+.images-container {
+  display: flex;
+  flex-direction: row;
 }
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+#quotes-section {
+  padding: 5rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#quotes-section .center {
+  display: flex;
+  flex-direction: row;
+}
+
+.quote {
+  display: flex;
+  justify-content: flex-start;
+  padding-right: 1.875rem;
+  color: #4A4A4A;
+  font-size: 1.875rem;
+  font-family: "Palatino";
+  font-style: italic;
+}
+
+.quote-citation {
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+
 
 @media only screen and (max-width: 760px) {
   #filters-section {
@@ -430,17 +474,29 @@ header .mobile {
 
 footer {
   background-color: #9b9b9b;
-  padding: 1.5rem 2rem;
+  width: 100%;
+  height: 3.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
 }
 
 footer .content {
   color: white;
   display: flex;
   font-size: .75rem;
+  padding: 0 2rem;
 }
 
 footer .copyright {
   flex-grow: 1;
+  text-align: left;
+}
+
+footer .location {
+  flex-grow: 1;
+  text-align: right;
 }
 
 @media only screen and (min-width: 760px) {
